@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  POSTGRES_HOST: databaseammar.c6jrchfbbfzc.eu-west-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: udagram-aq-dev
+  AWS_REGION: eu-west-1
+  AWS_PROFILE: default
+  JWT_SECRET: hello
+  URL: http://a7479f8397df246e489fe9f340c4c687-302566901.eu-west-1.elb.amazonaws.com:8100
+
+metadata:
+  name: env-config
