@@ -66,7 +66,7 @@ AWS EKS cluster:
 
 Backend service functioning properly:
 ![feed-logs](images/kubectl-feed-logs.png)
-![feed-ui](images/feed-api-aws-logs.png)
+![feed-ui](images/feed-api-aws.png)
 
 Running application:
 ![client](images/udagram-ui.png)
