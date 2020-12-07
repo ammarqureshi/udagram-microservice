@@ -13,6 +13,11 @@ A simple image sharing AWS cloud application.
   
 infra/k8s has the secrets and configuration for the application to work
 
+
+Connect to EKS cluster with kubectlL:
+
+```aws eks --region <region-code> update-kubeconfig --name <cluster_name>```
+
 How to configure:
 
 * aws-secret.yaml 
