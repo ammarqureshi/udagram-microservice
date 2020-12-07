@@ -64,6 +64,19 @@ AWS EKS cluster:
 ![services](images/kubectl-services.png)
 
 
+
+```kubectl describe services```
+
+![describe-svc1](images/kubectl-describe-services-1.png)
+![describe-svc2](images/kubectl-describe-services-2.png)
+
+
+
+```kubectl get pods```
+![pods](images/kubectl-pods.png)
+
+
+
 ```kubectl get hpa```
 ![hpa](images/kubectl-hpa.png)
 
