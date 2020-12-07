@@ -15,13 +15,21 @@ infra/k8s has the secrets and configuration for the application to work
 
 How to configure:
 
+* aws-secret.yaml 
 in your local machine, provided that you have configured your account using aws-cli
 ```cat ~/.aws/credentials | head -n 3``` 
 this will output the first 3 lines of the file, which is the default profile
+
 ```cat ~/.aws/credentials | head -n 3 | base64```
 this will output the base64 encoded version of it.
 
-similarly for POSTGRES secret environment variables, you will need to feed in encoded base64 into your secret yaml file
+the encoded version needs to be copied into credentials field in aws-secret.yaml
+
+* env-configmap.yaml consists of all the configuration that is required inside k8s cluster for the app to function properly. The URL should be your reverse proxy URL.
+
+
+* env-secret.yaml
+similarly for POSTGRES secret variables, you will need to feed in encoded base64 into env-secret.yaml
 ```echo -n $POSTGRES_PASSWORD | base64``` 
 
 kubectl apply -f infra/k8s will create secret and configmap inside the cluster
